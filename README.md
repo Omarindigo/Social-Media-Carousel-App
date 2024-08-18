@@ -1,6 +1,7 @@
 # Social-Media-Carousel-App
 Social Media Carousel App for mocking and low fedility 
 
+![SMCA](https://github.com/user-attachments/assets/e3cdf52e-841e-4b71-990c-6b7967a480ea)
 
 This web application serves as a mock Social Media Story Carousel, simulating the appearance and functionality of social media posts when published on a website. It provides a responsive and accessible interface where users can navigate through various media, including images and videos, using both on-screen controls and keyboard inputs. The design ensures that media content is displayed consistently across different devices, from desktops to mobile screens.
 
