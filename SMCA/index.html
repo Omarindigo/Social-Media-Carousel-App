@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Accessible Video Carousel</title>
+</head>
+<body>
+    <section class="carousel-container" aria-label="Video carousel">
+        <div class="carousel" role="listbox" aria-live="polite"> 
+            <div class="carousel-videos">
+                <!-- Videos will be dynamically inserted here -->
+            </div>
+            <button class="carousel-btn btn-left" id="previous" aria-label="Previous video">&lt;</button>
+            <button class="carousel-btn btn-right" id="next" aria-label="Next video">&gt;</button>
+        </div>
+    </section>
+
+    <!-- Overlay button to activate modal -->
+    <button id="overlay-button" class="overlay-button" aria-label="Show instructions">?</button>
+    
+    <!-- Modal for instructions -->
+    <div id="instructions-modal" class="modal" aria-hidden="true">
+        <div class="modal-content">
+            <span class="close-button" id="close-modal">&times;</span>
+            <h2>Keyboard Controls and Gestures</h2>
+            <ul>
+                <li><strong>Left Arrow (←):</strong> Rewind 10 seconds</li>
+                <li><strong>Right Arrow (→):</strong> Forward 10 seconds</li>
+                <li><strong>Up Arrow (↑):</strong> Increase volume</li>
+                <li><strong>Down Arrow (↓):</strong> Decrease volume</li>
+                <li><strong>Spacebar:</strong> Play/Pause video</li>
+                <li><strong>&lt; or ,:</strong> Previous video</li>
+                <li><strong>&gt; or .:</strong> Next video</li>
+                <li><strong>Ctrl:</strong> Show native video controls</li>
+                <li><strong>Swipe Left/Right:</strong> Change videos</li>
+                <li><strong>Swipe Up/Down:</strong> Adjust volume</li>
+                <li><strong>Drag Up:</strong> Show native video controls</li>
+                <li><strong>Double-tap:</strong> Forward/Rewind 10 seconds</li>
+                <li><strong>/ or ?:</strong> Show this help modal</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
